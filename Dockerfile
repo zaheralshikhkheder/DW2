@@ -6,5 +6,5 @@ RUN apt install -y php
 COPY html /var/www/html/
 RUN date> /var/www/html/buildtime.txt
 WORKDIR /var/www/html/
-EXPOSE 81/tcp
+EXPOSE 80/tcp
 CMD service apache2 start && bash
